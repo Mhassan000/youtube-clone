@@ -30,7 +30,7 @@ a {
   outline:none;
   width:350px;
 }
-/* .category-btn:hover {
+.category-btn:hover {
   background-color: #FC1503 !important;
   color: white !important;
 }
@@ -90,4 +90,4 @@ a {
   .search-bar{
     width:200px;
   }
-} */
+}

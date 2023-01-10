@@ -1,29 +1,15 @@
-import { Stack } from '@mui/material'
+import { useState, useEffect } from 'react'
+import { Stack, Box, Typography } from '@mui/material'
 import React from 'react'
-
-const Feed = () => {
-  return (
-    <Stack>Feed
-      <h1>Home</h1>
-      <h1>Home</h1>
-      <h1>Home</h1>
-      <h1>Home</h1>
-      <h1>Home</h1>
-      <h1>Home</h1>
-      <h1>Home</h1>
-      <h1>Home</h1>
-      <h1>Home</h1>
-      <h1>Home</h1>
-      <h1>Home</h1>
-      <h1>Home</h1>
-      <h1>Home</h1>
-      <h1>Home</h1>
-      <h1>Home</h1>
-      <h1>Home</h1>
-      <h1>Home</h1>
-      <h1>Home</h1>
+import {Sidebar} from './index'
+const Feed = () => (
+    <Stack sx={{ flexDirection: { sx: 'column',
+    md: 'row'}}}>
+      <Box sx={{height: {sx: 'auto' ,md: '92vh'}, borderRight: '1px solid #3d3d3d' , px: {sx: 0 , md: 2}}}>
+        <Sidebar /> 
+      </Box>
     </Stack>
     )
-  }
+  
 
 export default Feed

@@ -36,7 +36,7 @@ const App = ()=> {
     }
   ]);
   return (
-    <Box sx={{ bgcolor: "red" }}>
+    <Box sx={{ backgroundColor: 'black' }}>
       <RouterProvider router={router}/>
       
     </Box>
