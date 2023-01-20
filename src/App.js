@@ -19,24 +19,40 @@ const App = ()=> {
         {
           path: "/",
           element: <Feed />,
+        },
+        {
+          path: "/channel/:id",
+          element: <ChannelDetails />,
+        },
+        {
+          path: "/video/:id",
+          element: <VideoDetail />,
+        },
+        {
+          path: "/search/:searchTerm",
+          element: <SearchDetails />,
         }
       ]
     },
-    {
-      path: "/video/:id",
-      element: <VideoDetail />,
-    },
-    {
-      path: "/channel/:id",
-      element: <ChannelDetails />,
-    },
-    {
-      path: "/search/:searchTerm",
-      element: <SearchDetails />,
-    }
+    // {
+    //   path: "/video/:id",
+    //   element: <VideoDetail />,
+    // },
+    // {
+    //   path: "/channel/:id",
+    //   element: <ChannelDetails />,
+    // },
+    // {
+    //   path: "/search/:searchTerm",
+    //   element: <SearchDetails />,
+    // }
   ]);
   return (
-    <Box sx={{ backgroundColor: 'black' }}>
+    <Box sx={{ 
+      backgroundColor: 'black',
+      // height: '100vw',
+
+       }}>
       <RouterProvider router={router}/>
       
     </Box>
