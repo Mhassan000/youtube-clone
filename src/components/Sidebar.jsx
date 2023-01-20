@@ -4,21 +4,22 @@ import { categories } from '../utils/constant'
 const Sidebar = ({selectedCategory,setSelectedCategory}) => {
 
     return (
-        <Stack direction= 'row' 
+        <Stack direction= 'row'className='scroll-horizontal'
         sx={{
-            overFlowY: 'auto',
-            height: {sx: 'auto' ,md: '95%'},
+            overFlowX: 'auto',
+            height: {sx: 'auto' ,md: '95vh'},
             flexDirection: {md: 'column'},
         }}>
         {categories.map((category) => (
             <button className='category-btn'
+            key={category.name}
             onClick={() => setSelectedCategory(category.name)}
             style={{
                 backgroundColor: selectedCategory === category.name && '#FC1503',
                 color: 'white',
                 
+                
             }}
-            key={category.name}
             >
 
                 <span style={{

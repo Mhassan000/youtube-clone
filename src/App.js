@@ -6,7 +6,7 @@ import {
 } from "react-router-dom";
 
 import {Box} from "@mui/material";
-import { Navbar, Feed, ChannelDetails,SearchDetails,VideoDetail } from "./components";
+import { Navbar, Feed, ChannelDetails,VideoDetail, SearchFeed } from "./components";
 const App = ()=> {
 
   
@@ -30,7 +30,7 @@ const App = ()=> {
         },
         {
           path: "/search/:searchTerm",
-          element: <SearchDetails />,
+          element: <SearchFeed />,
         }
       ]
     },
