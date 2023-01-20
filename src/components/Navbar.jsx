@@ -24,7 +24,7 @@ const Navbar = () => {
 
      </Stack>
       <Outlet />
-        </Box>
+      </Box>
     )
   }
 
