@@ -6,7 +6,7 @@ const Videos = ({videos , direction}) => {
 
   return (
     <Stack
-    direction={direction || 'row'}
+    direction={direction ||'row'}
     flexWrap="wrap"
     justifyContent='start'
     gap={2}
