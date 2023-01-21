@@ -34,24 +34,10 @@ const App = ()=> {
         }
       ]
     },
-    // {
-    //   path: "/video/:id",
-    //   element: <VideoDetail />,
-    // },
-    // {
-    //   path: "/channel/:id",
-    //   element: <ChannelDetails />,
-    // },
-    // {
-    //   path: "/search/:searchTerm",
-    //   element: <SearchDetails />,
-    // }
   ]);
   return (
     <Box sx={{ 
       backgroundColor: 'black',
-      // height: '100vw',
-
        }}>
       <RouterProvider router={router}/>
       
