@@ -8,7 +8,7 @@ import { Stack, Box, Typography } from '@mui/material'
 const Feed = () => {
   const [selectedCategory, setSelectedCategory] = useState('New')
   const [videos, setVideos] = useState([])
-  
+  console.log(videos)
   useEffect (()=>{
     fetchFromApi(`search?part=snippet&q=${selectedCategory}`)
       .then((data)=>{
