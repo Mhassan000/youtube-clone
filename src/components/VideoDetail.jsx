@@ -8,7 +8,7 @@ import { CheckCircle } from '@mui/icons-material'
 
 const VideoDetail = () => {
   const [videoDetail, setVideoDetail] = useState(null)
-  const [videos, setVideos] = useState(null)
+  const [videos, setVideos] = useState([])
   const {id} = useParams()
   useEffect (()=>{
     fetchFromApi(`videos?part=snippet,statistics&id=${id}`)
