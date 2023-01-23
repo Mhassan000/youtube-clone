@@ -6,8 +6,8 @@ const Sidebar = ({selectedCategory,setSelectedCategory}) => {
     return (
         <Stack direction= 'row'className='scroll-horizontal' 
         sx={{
-            overFlowX: 'auto',
-            height: {sx: 'auto' ,md: '95vh'},
+            overflowY: 'auto',
+            height: {sx: 'auto' ,md: '92vh'},
             flexDirection: {md: 'column'},
         }}>
         {categories.map((category) => (
